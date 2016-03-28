@@ -1,0 +1,7 @@
+<FilesMatch "\.(htm|html|js)$">
+ForceType 'text/html; charset=iso-8859-1'
+</FilesMatch>
+<FilesMatch "\.(css)$">
+Order deny,allow
+Allow from all
+</FilesMatch>
