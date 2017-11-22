@@ -1,0 +1,1020 @@
+%% \usepackage{times}
+%% \usepackage[francais]{babel}
+
+
+\documentclass[titlepage,11pt,amstex]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{type1cm}
+\usepackage{times}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=4.10.0.2363}
+%TCIDATA{Created=Wed Aug 13 11:04:47 1997}
+%TCIDATA{LastRevised=Wednesday, April 16, 2008 23:55:25}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=article.cst}
+
+\input{DufourP2}
+\input{DufourC1}
+\begin{comment}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+{\theorembodyfont{\normalfont}
+\newtheorem{example}[theorem]{Example}
+}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+{\theorembodyfont{\normalfont}
+\newtheorem{proofth}[theorem]{Proof}
+}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+{\theorembodyfont{\normalfont}
+\newtheorem{statement}[theorem]{}
+}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][\proofname]{\par
+  \normalfont
+  \trivlist
+  \item[\hskip\labelsep\scshape
+    #1{.}]\ignorespaces
+}{  \qed\endtrivlist\vspace{\baselineskip} }
+\newenvironment{proofnoname}{\par\noindent
+  \normalfont}  {\qed\vspace{\baselineskip}}
+\newenvironment{sec2subsec}{\renewcommand{\section}{\subsection}}{}
+\newenvironment{reflist}{\quad \newline \noindent {\Large \bf References}
+  \newline \quad \newline
+  \begin{list}{}{\itemindent -.15in \leftmargin .15in \parsep 0in
+                 \itemsep 0in} \item \vspace{-.35in} }{\end{list}}
+\end{comment}
+\input{tcilatex}
+
+\begin{document}
+
+\title{McGill University\\
+Department of Economics\\
+Econ 706 \\
+Special topics in econometrics / Sujets sp\'{e}ciaux d'\'{e}conom\'{e}trie \\
+Winter / Hiver 2008\\
+Course outline / Syllabus }
+\author{Professor / Professeur :\ Jean-Marie Dufour}
+\date{January 2008}
+\maketitle
+
+\pagenumbering{arabic}\setcounter{page}{1}
+
+This course has two main objectives The first one is to review parts
+elements of statistical theory which are especially relevant to the
+development of tests and confidence sets in econometrics. The second
+objective is to study and apply in different contexts various methods
+allowing one to obtain finite-sample inference procedures as well more
+reliable large-sample methods. Among the topics that will receive special
+attention, we may note: test methods based on simulation (Monte Carlo tests,
+bootstrapping), projection techniques for the construction of tests and
+confidence sets, weak instrument problems in structural modelling,
+finite-sample nonparametric methods.
+
+\begin{center}
+\_\_\_\_\_\_
+\end{center}
+
+Ce cours comporte deux objectifs principaux. Le premier consiste \`{a} \'{e}%
+tudier certains \'{e}l\'{e}ments de th\'{e}orie statistique qui sont
+importants pour le d\'{e}veloppement de tests et r\'{e}gions de confiance en 
+\'{e}conom\'{e}trie. Le second sera d'\'{e}tudier et appliquer dans diff\'{e}%
+rents contextes diverses m\'{e}thodes qui permettent d'obtenir des proc\'{e}%
+dures d'inf\'{e}rence valides dans les \'{e}chantillons finis ou encore des
+proc\'{e}dures asymptotiques plus fiables. Parmi les sujets qui recevront
+une attention particuli\`{e}re, on notera: les techniques de test fond\'{e}%
+es sur le recours \`{a} des simulations (tests de Monte Carlo, bootstrap),
+l'emploi de techniques de projection pour la construction de tests et r\'{e}%
+gions de confiance, les probl\`{e}mes d'instruments faibles en \'{e}conom%
+\'{e}trie structurelle, ainsi que diverses techniques non-param\'{e}triques
+exactes.
+
+\begin{center}
+\_\_\_\_\_\_
+\end{center}
+
+\newpage 
+
+The evaluatiuon willbe based on 2 elements:
+
+\begin{enumerate}
+\item a mid-term exam: 40\% of the grade;
+
+\item a final exam: 60\% of the grade.
+\end{enumerate}
+
+\begin{center}
+\_\_\_\_\_\_
+\end{center}
+
+L'\'{e}valuation sera bas\'{e}e sur deux \'{e}l\'{e}ments:
+
+\begin{enumerate}
+\item un examen intra-semestriel: 40\% de la note;
+
+\item examen final: 60\% de la note.
+\end{enumerate}
+
+\noindent L'examen intra-semestriel aura lieu en dehors des heures normales
+de cours.
+
+\quad
+
+\begin{center}
+\textbf{Recommended texts / Manuels recommand\'{e}s / }
+
+\quad
+\end{center}
+
+(GM) Gouri\'{e}roux, C. et A. Monfort (1989), Statistique et mod\`{e}les 
+\'{e}conom\'{e}triques, Volumes 1 et 2. Economica, Paris.
+
+(GM) Gouri\'{e}roux, C. et A. Monfort (1995), Statistics and Econometric
+Models, Volumes 1 and 2. Cambridge University Press, Cambridge, U.K..
+English translation of previous book.
+
+(U) Ullah, A. (2004), Finite Sample Econometrics, Advanced texts in
+Econometrics, Cambridge University Press, Cambridge, U.K.
+
+\quad
+
+\begin{center}
+\textbf{Other books used / Autres livres utilis\'{e}}s
+
+\quad
+\end{center}
+
+(Am)\ Amemiya, T. (1985), Advanced Econometrics, Harvard University Press,
+Cambridge, Massachusetts.
+
+(An)\ Anderson, T. W. (1984), An Introduction to Multivariate Statistical
+Analysis, Second Edition, Wiley, New York.
+
+(DM) Davidson, R. et J. G. MacKinnon (1993), Estimation and Inference in
+Econometrics, Oxford University Press, Oxford.
+
+(GA)\ Gallant, A. R. (1987), Nonlinear Statistical Models, Wiley, New York.
+
+(GW)\ Gallant, A. R. et H. White (1988), A Unified Theory of Estimation and
+Inference for Nonlinear Statistical Models, Basil Blackwell, New York.
+
+(LE)\ Lehmann, E. L. (1983), Theory of Point Estimation, Wiley, New York.
+
+(LT)\ Lehmann, E. L. (1986), Testing Statistical Hypotheses, Second Edition,
+Wiley, New York.
+
+(R)\ Rao, C. R. (1973), Linear Statistical Inference and its Applications,
+Second Edition, Wiley, New York.
+
+(W)\ White, H. (1984), Asymptotic Theory for Econometricians, Academic
+Press, Orlando, Florida.
+
+\begin{center}
+\quad \newpage
+\end{center}
+
+\begin{equation*}
+\text{\textbf{Topics}}
+\end{equation*}
+
+\section{\textbf{Philosophy of science and statistics \label{Philosophy of
+science and statistics}}}
+
+\begin{enumerate}
+\item \label{Objectives}Objectives of scientific knowledge
+
+\item \label{Criteria}Criteria for evaluating theories and models
+\end{enumerate}
+
+\section{Inference \textbf{techniques \label{Inference techniques}}}
+
+\begin{enumerate}
+\item Statistical models
+
+\begin{enumerate}
+\item \label{Notion of statistical model}Notion of statistical model
+
+\item \label{Important econometric models}Important econometric models
+\end{enumerate}
+
+\item \label{Statistical models}Statistical problems
+
+\begin{enumerate}
+\item \label{Statistics and decision theory}Statistical problems as decision
+problems
+
+\item \label{R: Important statistical problems}Review of important
+statistical problems
+
+\begin{enumerate}
+\item Estimation
+
+\item Tests
+
+\item Confidence regions
+
+\item Multiple tests and simultaneous inference
+
+\item Prediction
+
+\item Model selection
+\end{enumerate}
+\end{enumerate}
+
+\item Information and identification
+
+\begin{enumerate}
+\item Sufficient and ancillary statistics
+
+\item Information
+
+\item Identification
+\end{enumerate}
+
+\item Estimation
+
+\begin{enumerate}
+\item Criteria for evaluating estimators
+
+\item Unbiased estimation
+
+\item Some general estimation methods
+
+\begin{enumerate}
+\item Maximum likelihood
+
+\item M-estimators
+
+\item Instrumental variables
+
+\item Methods of moments
+
+\item Minimum distance
+\end{enumerate}
+\end{enumerate}
+
+\item Testing
+
+\begin{enumerate}
+\item Basic concepts: level, size, power, conservative test, liberal test
+
+\item Optimal tests and Neyman-Pearson theorem
+
+\item Important classes of tests
+
+\begin{enumerate}
+\item Similar tests
+
+\item Unbiased tests
+
+\item Invariant tests
+\end{enumerate}
+
+\item Some general methods for building tests
+
+\begin{enumerate}
+\item Likelihood ratio
+
+\item Wald tests
+
+\item Score-based procedures [Rao, Lagrange multiplier, Neyman's $C(\alpha )$%
+]
+
+\item Union-intersection methods
+\end{enumerate}
+\end{enumerate}
+
+\item Confidence regions
+
+\begin{enumerate}
+\item Basic concepts
+
+\item Pivotal functions
+
+\item Duality between tests and confidence regions
+\end{enumerate}
+
+\item Multiple tests and simultaneous inference
+
+\item Prediction and residuals
+
+\item Model selection
+
+\item Bayesian approach
+\end{enumerate}
+
+\section{Distributional problems and finite-sample analysis \label%
+{Distributional problems and finite-sample analysis}}
+
+\begin{enumerate}
+\item Asymptotic theory and its limitations
+
+\begin{enumerate}
+\item Review of basic asymptotic notions and results
+
+\item Asymptotic expansions
+
+\item Limitations of asymptotic theory
+\end{enumerate}
+
+\item Invariance problems in nonlinear models
+
+\item Techniques for building finite-sample inference procedures
+
+\begin{enumerate}
+\item Analytical derivation of distributions
+
+\begin{enumerate}
+\item Exact distributions of quadratic forms in Gaussian variables
+
+\item Imhof's algorithm
+\end{enumerate}
+
+\item Elimination of nuisance parameters
+
+\begin{enumerate}
+\item Conditioning
+
+\item Transformations
+\end{enumerate}
+
+\item Bounds
+
+\item Projection
+
+\item Randomization
+\end{enumerate}
+
+\item Theory of Monte Carlo tests
+
+\item Bootstrap
+\end{enumerate}
+
+\section{Static and dynamic regressions\textbf{\ \label{Static and dynamic
+regressions}}}
+
+\begin{enumerate}
+\item Nonregular problems in classical linear regressions
+
+\begin{enumerate}
+\item Linear models with non-normal disturbances
+
+\item Confidence intervals for ratios of coefficients, Fieller's method
+
+\item Linear models with exact collinearity
+
+\item Tests of nonlinear hypotheses
+
+\item Nonlinear restrictions
+
+\item Tests of multiple hypotheses
+\end{enumerate}
+
+\item Specification tests and analysis of residuals
+
+\begin{enumerate}
+\item Normality of errors
+
+\item Heteroskedasticity
+
+\item Autocorrelation
+
+\item Outliers
+\end{enumerate}
+
+\item Linear regressions with autocorrelated errors
+
+\item Multiple equation regression models
+
+\begin{enumerate}
+\item Multivariate linear regressions (MLR)
+
+\item Seemingly unrelated regressions (SURE)
+\end{enumerate}
+
+\item Regressions with heteroskedastic errors
+
+\item Inference problems in dynamic models
+
+\begin{enumerate}
+\item Review of technical difficulties
+
+\item Exact inference in dynamic models
+\end{enumerate}
+
+\item Structural change analysis
+
+\item Nonlinear regressions
+\end{enumerate}
+
+\section{Identification and structural models \label{Identification and
+structural models}}
+
+\begin{enumerate}
+\item Simultaneous equations and identification
+
+\item Inference problems associated with identification.
+
+\begin{enumerate}
+\item Impossibility theorems
+
+\item Weak instruments
+\end{enumerate}
+
+\item Exact inference in structural models
+
+\item Methods adapted to weak instruments
+
+\item Nonlinear structural models
+
+\item Generalized method of moments
+\end{enumerate}
+
+\section{Causality and multivariate time series models \label{Causality and
+multivariate time series models}}
+
+\begin{enumerate}
+\item \label{Multivariate time series models}Multivariate time series models
+
+\item \label{Causality in econometrics}General notions on causality in
+econometrics
+
+\item \label{Causality in multivariate time series models}Causality in
+multivariate time series models
+\end{enumerate}
+
+\section{Nonparametric methods \label{Nonparametric methods}}
+
+\begin{enumerate}
+\item Signs, ranks and permutations
+
+\item Location tests
+
+\item Tests against serial dependence
+
+\item Conditional independence tests
+
+\item Goodness-of-fit tests
+\end{enumerate}
+
+\begin{center}
+\newpage \textbf{Sujets}
+
+\quad
+\end{center}
+
+\section{\textbf{Philosophie des sciences et statistique}}
+
+\begin{enumerate}
+\item Objectifs de la connaissance scientifique
+
+\item Crit\`{e}res servant \`{a} \'{e}valuer les th\'{e}ories et les mod\`{e}%
+les
+\end{enumerate}
+
+\section{\textbf{Techniques d'inf\'{e}rence}}
+
+\begin{enumerate}
+\item Mod\`{e}les statistiques
+
+\begin{enumerate}
+\item La notion de mod\`{e}les statistique
+
+\item Quelques mod\`{e}les \'{e}conom\'{e}triques importants
+\end{enumerate}
+
+\item \label{Statistical problems}Probl\`{e}mes statistiques
+
+\begin{enumerate}
+\item Les probl\`{e}mes statistiques comme probl\`{e}mes de d\'{e}cision
+
+\item Revue des principaux probl\`{e}mes statistiques
+
+\begin{enumerate}
+\item Estimation
+
+\item Tests
+
+\item R\'{e}gions de confiance
+
+\item Tests multiples et inf\'{e}rence simultan\'{e}e
+
+\item Pr\'{e}vision
+
+\item Choix de mod\`{e}les
+\end{enumerate}
+\end{enumerate}
+
+\item \label{Information and sufficiency}Information et identification
+
+\begin{enumerate}
+\item \label{Sufficiency}Notions de statistique exhaustive et de statistique
+libre
+
+\item \label{Information}Information
+
+\item \label{Identification}Identification
+\end{enumerate}
+
+\item \label{Estimation}Estimation
+
+\begin{enumerate}
+\item Crit\`{e}res pour les estimateurs
+
+\item Estimation sans biais
+
+\item Quelques m\'{e}thodes g\'{e}n\'{e}rales d'estimation
+
+\begin{enumerate}
+\item Maximum de vraisemblance
+
+\item M-estimateurs
+
+\item Variables instrumentales
+
+\item M\'{e}thodes de moments
+
+\item Distance minimale
+\end{enumerate}
+\end{enumerate}
+
+\item \label{Testing}Tests
+
+\begin{enumerate}
+\item Concepts de base: niveau, taille, puissance, tests conservateurs,
+tests lib\'{e}raux
+
+\item Tests optimaux et th\'{e}or\`{e}me de Neyman-Pearson
+
+\item Classes importantes de tests
+
+\begin{enumerate}
+\item Tests $\alpha $-semblables
+
+\item Tests sans biais
+
+\item Tests invariants
+\end{enumerate}
+
+\item Quelques m\'{e}thodes g\'{e}n\'{e}rales pour construire des tests
+
+\begin{enumerate}
+\item Quotient de vraisemblance
+
+\item Tests de Wald
+
+\item Tests fond\'{e}s sur la vraisemblance [Rao, multiplicateur de
+Lagrange, $C(\alpha )$ de Neyman]
+
+\item M\'{e}thodes d'union-intersection
+\end{enumerate}
+\end{enumerate}
+
+\item \label{Confidence regions}R\'{e}gions de confiance
+
+\begin{enumerate}
+\item Concepts de base
+
+\item Notion de fonction pivotale
+
+\item Dualit\'{e} entre tests et r\'{e}gions de confiance
+\end{enumerate}
+
+\item \label{Simultaneous inference}Tests multiples et inf\'{e}rence simultan%
+\'{e}e
+
+\item \label{Prediction}Pr\'{e}vision et r\'{e}sidus
+
+\item \label{Model selection}Choix de mod\`{e}les
+
+\item \label{Bayesian approach}Approche bay\'{e}sienne
+\end{enumerate}
+
+\section{Probl\`{e}mes distributionnels et analyse \`{a} distance finie}
+
+\begin{enumerate}
+\item \label{Asymptotic theory and its limitations}La th\'{e}orie
+asymptotique et ses limitations
+
+\begin{enumerate}
+\item \label{Asymptotic theory}Rappels de th\'{e}orie asymptotique
+
+\item \label{Asymptotic expansions}Expansions asymptotiques
+
+\item \label{Limitations of asymptotic theory}Limitations de la th\'{e}orie
+asymptotique
+\end{enumerate}
+
+\item \label{Test invariance}Probl\`{e}mes d'invariance de tests dans les mod%
+\`{e}les non lin\'{e}aires
+
+\item \label{Finite-sample inference techniques}Techniques pour la mise au
+point de proc\'{e}dures d'inf\'{e}rence \`{a} distance finie
+
+\begin{enumerate}
+\item \label{Exact analytical distributions}D\'{e}rivation de distributions
+analytiques exactes
+
+\begin{enumerate}
+\item \label{Gaussian quadratic forms}Distributions exactes de formes
+quadratiques dans le cas gaussien
+
+\item \label{Imhof algorithm}Algorithme d'Imhof
+\end{enumerate}
+
+\item \label{Nuisance parameter elimination}\'{E}limination des param\`{e}%
+tres du nuisance
+
+\begin{enumerate}
+\item \label{Conditioning}Conditionnement
+
+\item \label{Transformations}Transformations
+\end{enumerate}
+
+\item \label{Bounds}Bornes
+
+\item \label{Projection}Projection
+
+\item \label{Randomization}Randomisation
+\end{enumerate}
+
+\item \label{Monte Carlo tests}Th\'{e}orie des tests de Monte Carlo
+
+\item \label{Bootstrapping}Bootstrap
+\end{enumerate}
+
+\section{\textbf{Mod\`{e}les de r\'{e}gression statiques et dynamiques}}
+
+\begin{enumerate}
+\item \label{Nonregular problems in linear regression}Probl\`{e}mes non r%
+\'{e}guliers dans le mod\`{e}le lin\'{e}aire classique
+
+\begin{enumerate}
+\item \label{Linear models with non-normal errors}Mod\`{e}les lin\'{e}aires
+avec erreurs non-normales
+
+\item \label{Ratios of coefficients}Intervalles de confiance pour des ratios
+de coefficients, m\'{e}thode de Fieller
+
+\item \label{Linear models with collinearity}Mod\`{e}les lin\'{e}aires avec
+collin\'{e}arit\'{e} exacte
+
+\item \label{Nonlinear hypotheses}Tests d'hypoth\`{e}ses non lin\'{e}aires
+
+\item \label{Nonlinear constraints}Contraintes non-lin\'{e}aires
+
+\item \label{Multiple hypotheses}Tests d'hypoth\`{e}ses multiples
+\end{enumerate}
+
+\item \label{Specification tests}Tests de sp\'{e}cification et analyse de r%
+\'{e}sidus
+
+\begin{enumerate}
+\item \label{Normality tests}Normalit\'{e} des erreurs
+
+\item \label{Heteroskedasticity tests}H\'{e}t\'{e}rosc\'{e}dasticit\'{e}
+
+\item \label{Autocorrelation tests}Autocorr\'{e}lation
+
+\item \label{Outlier tests}Observations \`{a} l'\'{e}cart
+\end{enumerate}
+
+\item \label{Linear regressions with autocorrelated errors}Mod\`{e}les de r%
+\'{e}gression avec erreurs autocorr\'{e}l\'{e}es
+
+\item \label{Multiple equations linear regressions}Mod\`{e}les de r\'{e}%
+gression \`{a} plusieurs \'{e}quations
+
+\begin{enumerate}
+\item \label{MLR}Mod\`{e}les de r\'{e}gression multivari\'{e}s (MLR)
+
+\item \label{SURE}R\'{e}gressions empil\'{e}es (SURE)
+
+\item \label{CAPM}Applications \`{a} des mod\`{e}les d'\'{e}valuation de
+prix d'actifs financiers (CAPM)
+\end{enumerate}
+
+\item \label{Regressions with heteroskedasticity}R\'{e}gressions avec
+erreurs h\'{e}t\'{e}rosc\'{e}dastiques
+
+\item \label{Inference in dynamic models}Probl\`{e}mes d'inf\'{e}rence dans
+les mod\`{e}les dynamiques
+
+\begin{enumerate}
+\item \label{Technical difficulties}Revue des difficult\'{e}s techniques
+
+\item \label{Exact inference methods in dynamic models}Inf\'{e}rence exacte
+dans les mod\`{e}les dynamiques
+\end{enumerate}
+
+\item \label{Structural change analysis}Probl\`{e}mes d'analyse du
+changement structurel
+
+\item \label{Nonlinear regression}Mod\`{e}les de r\'{e}gression non-lin\'{e}%
+aires
+\end{enumerate}
+
+\section{Mod\`{e}les structurels}
+
+\begin{enumerate}
+\item \label{Simultaneous equations}\'{E}quations simultan\'{e}es lin\'{e}%
+aires et identification
+
+\item \label{Identification and inference}Probl\`{e}mes d'inf\'{e}rence reli%
+\'{e}s \`{a} l'identification.
+
+\begin{enumerate}
+\item \label{Impossibility theorems}Th\'{e}or\`{e}mes d'impossibilit\'{e}
+
+\item \label{Weak instruments}Instruments faibles
+\end{enumerate}
+
+\item \label{Exact inference in structural models}Inf\'{e}rence exacte dans
+les mod\`{e}les structurels
+
+\item \label{Methods adapted to WI}M\'{e}thodes d'inf\'{e}rence adapt\'{e}es
+aux instruments faibles
+
+\item \label{Nonlinear structural models}Mod\`{e}les structurels non lin\'{e}%
+aires
+
+\item \label{GMM}M\'{e}thode des moments g\'{e}n\'{e}ralis\'{e}s
+\end{enumerate}
+
+\section{Causalit\'{e} et mod\`{e}les de s\'{e}ries chronologiques multivari%
+\'{e}s}
+
+\begin{enumerate}
+\item Mod\`{e}les de s\'{e}ries chronologiques multivari\'{e}s
+
+\item G\'{e}n\'{e}ralit\'{e}s sur la causalit\'{e} en \'{e}conom\'{e}trie
+
+\item Causalit\'{e} dans les mod\`{e}les de s\'{e}ries chronologiques
+multivari\'{e}s
+\end{enumerate}
+
+\section{M\'{e}thodes non-param\'{e}triques}
+
+\begin{enumerate}
+\item \label{Sign and rank tests}G\'{e}n\'{e}ralit\'{e}s sur les tests de
+signes, de rangs et de permutations
+
+\item \label{Distribution-free location tests}Tests de localisation
+
+\item \label{Distribution-free serial dependence tests}Tests contre la d\'{e}%
+pendance s\'{e}rielle
+
+\item \label{Distribution-free orthogonality tests}Tests d'orthogonalit\'{e}
+
+\item \label{Goodness-of-fit tests}Tests d'ajustement
+\end{enumerate}
+
+\newpage
+
+\begin{center}
+\textbf{Lectures et r\'{e}f\'{e}rences principales / Readings and main
+references}
+
+\quad
+\end{center}
+
+\quad
+
+The symbol * represents required readings. Topics for which no reference is
+provided will covered in class-notes. Photocopied lecture notes also
+constitute required reading.
+
+Le symbole * repr\'{e}sente des lectures obligatoires. Les sujets pour
+lesquels aucune r\'{e}f\'{e}rence n'appara\^{\i}t seront couverts au moyen
+de notes de cours. Les notes de cours photocopi\'{e}es constituent des
+lectures obligatoires.
+
+\quad
+
+\noindent \textbf{\ref{Philosophy of science and statistics}. Philosophy of
+science and statistics / Philosophie des sciences et statistique}
+
+\quad
+
+\begin{description}
+\item[\quad ] \textbf{\ref{Objectives} - \ref{Criteria}}.\quad \cite%
+{Dufour(2000)}, \cite{Dufour(2001)}.
+\end{description}
+
+\quad
+
+\noindent \textbf{\ref{Inference techniques}}. \textbf{Inference techniques
+/ Techniques d'inf\'{e}rence}
+
+\quad
+
+\begin{description}
+\item[\quad ] \textbf{\ref{Statistical models}}. * GM, Ch. 1.
+
+\item[\quad ] \textbf{\ref{Statistics and decision theory}}.\quad * GM, Ch.
+2.
+
+\item[\quad ] \textbf{\ref{Information and sufficiency}}.* GM, Ch. 3. \cite%
+{Basu(1977)}.
+
+\item[\quad ] \textbf{\ref{Estimation}}.\quad GM, Ch. 5. 6.
+
+\item[\quad ] \textbf{\ref{Testing}}.\quad * GM, Ch. 14, 15, 16.
+
+\item[\quad ] \textbf{\ref{Confidence regions}}.\quad * GM, Ch. 20.
+
+\item[\quad ] \textbf{\ref{Simultaneous inference}}.\quad * GM, Ch. 19.
+
+\item[\quad ] \textbf{\ref{Prediction}}.\quad GM, Ch. 11.
+
+\item[\quad ] \textbf{\ref{Model selection}}.\quad GM, Ch. 22.
+
+\item[\quad ] \textbf{\ref{Bayesian approach}}.\quad GM, Ch. 4, 12
+\end{description}
+
+\quad
+
+\noindent \textbf{\ref{Distributional problems and finite-sample analysis}.
+Distributional problems and finite-sample analysis / Probl\`{e}mes
+distributionnels et analyse \`{a} distance finie}
+
+\quad
+
+\begin{description}
+\item[\quad ] \textbf{\ref{Exact analytical distributions}. *}\cite[Chapters
+1 and 2]{Ullah(2004)}.
+
+\item \textbf{\ref{Asymptotic theory and its limitations}. *}\cite%
+{Dufour(2000)}, *\cite{Dufour(2001)}, \cite{Dufour(2003)}, *\cite%
+{Bahadur-Savage(1956)}.
+
+\item \textbf{\ref{Test invariance}}.\quad *\cite{Dufour-Dagenais(1991)}, 
+\cite{Dufour-Dagenais(1992)}, \cite{Dufour-Dagenais(1992b)}, \cite%
+{Dufour-Dagenais(1994)}.
+
+\item[\quad ] \textbf{\ref{Bounds}}. *\cite{Dufour(1990)}.
+
+\item[\quad ] \textbf{\ref{Projection}}.\quad *\cite%
+{Abdelkhalek-Dufour(1998)}.
+
+\item[\quad ] \textbf{\ref{Monte Carlo tests}}.\quad *\cite%
+{Dufour-Khalaf(2001)}, *\cite{Dufour(2006)}.
+\end{description}
+
+\quad
+
+\noindent \textbf{\ref{Static and dynamic regressions}. Static and dynamic
+regressions / Mod\`{e}les de r\'{e}gression statiques et dynamiques}
+
+\quad
+
+\begin{description}
+\item[\quad ] *\cite[Chapter 5 and 6]{Ullah(2004)}.
+
+\item \textbf{\ref{Ratios of coefficients}}.\quad *\cite{Dufour(1997)}.
+
+\item[\quad ] \textbf{\ref{Linear models with collinearity}}.\quad *\cite%
+{Dufour(1982)}.
+
+\item[\quad ] \textbf{\ref{Nonlinear hypotheses}}.\quad *\cite{Dufour(1989)}.
+
+\item[\quad ] \textbf{\ref{Multiple hypotheses}}.\quad *\cite{Dufour(1989)}.
+
+\item[\quad ] \textbf{\ref{Normality tests}}.\quad \cite%
+{Dufour-Farhat-Gardiol-Khalaf(1998)}.
+
+\item[\quad ] \textbf{\ref{Heteroskedasticity tests}}.\quad \cite%
+{Dufour-Khalaf-Bernard-Genest(2004)}.
+
+\item[\quad ] \textbf{\ref{MLR}}.\quad \cite{Dufour-Khalaf(2002b)}.
+
+\item[\quad ] \textbf{\ref{SURE}}.\quad \cite{Dufour-Khalaf(2002)}, \cite%
+{Dufour-Khalaf(2001d)}, \cite{Dufour-Torres(1998)}.
+
+\item \textbf{\ref{CAPM}}.\quad *\cite{Dufour-Khalaf-Beaulieu(2003)}, *\cite%
+{Beaulieu-Dufour-Khalaf(2006)}, *\cite{Beaulieu-Dufour-Khalaf(2007)}, .
+
+\item[\quad ] \textbf{\ref{Regressions with heteroskedasticity}}.\quad \cite%
+{Dufour(1991)}, \cite{Dufour-Mahseredjian(1993)}.
+
+\item[\quad ] \textbf{\ref{Inference in dynamic models}}.\quad \cite%
+{Dufour(1990)}, *\cite{Dufour-King(1991)}, *\cite{Dufour-Kiviet(1998)}, \cite%
+{Kiviet-Dufour(1997)}, \cite{Dufour-Torres(1998)}, \cite{Dufour-Torres(2000)}%
+.
+\end{description}
+
+\quad
+
+\noindent \textbf{\ref{Identification and structural models}}. \textbf{%
+Identification and structural models / Identification et mod\`{e}les
+structurels}
+
+\quad
+
+\begin{description}
+\item[\quad ] \textbf{\ref{Simultaneous equations}}. *\cite[Chapter 7]%
+{Ullah(2004)}.
+
+\item \textbf{\ref{Identification and inference}}. *\cite{Dufour(2003)}, *%
+\cite{Stock-Wright-Yogo(2002)}, *\cite{Dufour(1997)}.
+
+\item \textbf{\ref{Exact inference in structural models}}. *\cite%
+{Dufour(1997)}, *\cite{Dufour-Jasiak(2001)}, *\cite{Dufour-Taamouti(2005)}.
+
+\item \textbf{\ref{Methods adapted to WI}}. *\cite{Kleibergen(2002)}, *\cite%
+{Moreira(2003)}.
+\end{description}
+
+\quad
+
+\noindent \textbf{\ref{Nonparametric methods}}. \textbf{Causality and
+multivariate time series models / Causalit\'{e} te mod\`{e}les de s\'{e}ries
+chronologiques multivari\'{e}s}
+
+\quad
+
+\begin{description}
+\item \ref{Causality in econometrics}. \cite{Causality in econometrics}. 
+\cite{Pearl(2000)}
+
+\item \ref{Causality in multivariate time series models}. *\cite%
+{Dufour-Renault(1998)}, \cite{Dufour-Pelletier-Renault(2006)}, \cite%
+{Boudjellaba-Dufour-Roy(1992)}.
+\end{description}
+
+\quad
+
+\noindent \textbf{\ref{Nonparametric methods}}. \textbf{Nonparametric
+methods / M\'{e}thodes non-param\'{e}triques}
+
+\textbf{\quad }
+
+\begin{description}
+\item[\quad ] \textbf{\ref{Sign and rank tests}}. \cite%
+{Dufour-Lepage-Zeidan(1982)}.
+
+\item[\quad ] \textbf{\ref{Distribution-free location tests}}. \cite%
+{Dufour-Hallin(1990)}.
+
+\item[\quad ] \textbf{\ref{Distribution-free serial dependence tests}}. \cite%
+{Dufour(1981)}, \cite{Dufour-Roy(1985)}, \cite{Dufour-Roy(1986)}, \cite%
+{Dufour-Roy(1986b)}, \cite{Dufour-Hallin(1987)}, \cite%
+{Dufour-Hallin-Mizera(1998)}, \cite{Dufour-Farhat-Hallin(2006)}.
+
+\item[\quad ] \textbf{\ref{Distribution-free orthogonality tests}}. \cite%
+{Campbell-Dufour(1991)}, \cite{Campbell-Dufour(1995)}, \cite%
+{Campbell-Dufour(1997)}.
+
+\item[\quad ] \textbf{\ref{Goodness-of-fit tests}}. \cite%
+{Dufour-Farhat(2001)}, \cite{Dufour-Farhat(2001b)}.
+\end{description}
+
+\quad
+
+\quad
+
+\begin{comment}
+
+\newpage \textbf{Bibliographie g\'{e}n\'{e}rale / General bibliography}
+
+\begin{center}
+\quad
+\end{center}
+
+\quad
+
+\bbibunitu\bbibunit
+
+\ebibunit\ebibunitu
+
+\quad
+
+\end{comment}
+
+\newpage
+
+\bibliographystyle{ECONOMETRICA}
+\bibliography{refer1}
+
+\end{document}
