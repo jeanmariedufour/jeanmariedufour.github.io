@@ -1,0 +1,547 @@
+﻿/*---------------------------------------*/
+/* CUSTOM STYLES FOR THE SSHRC WEBSITE   */
+/* --> CREATED BY THE SSHRC WEB TEAM     */
+/* --> CREATED: APRIL 2013               */ 
+/*---------------------------------------*/
+
+/* WET BLUE: rgb(41, 83, 118) */
+
+
+/***********************************/
+/* 1. GLOBAL TEMPLATE - OVERWRITES */
+/***********************************/
+
+/* REMOVED MARGINS AND PADDING FROM THE WET-BOEW CONTENT CONTAINER */
+#wb-cont { padding: 0; margin: 1px; }
+
+
+/**************************************/
+/* 2. HEADBOARD TEMPLATE - OVERWRITES */
+/**************************************/
+
+/* HOMEPAGE BANNER */
+.hp-banner { margin: 0 0 2em !important; }
+
+/* HOMEPAGE CONTENT */
+.hp-content { padding-left: .75%; padding-right: .75%; }
+
+/**********************************/
+/* 3. GENERAL STYLES - OVERWRITES */
+/**********************************/
+/*body { font-family: Arial, Helvetica, Sans-Serif !important; }*/
+
+.bold { font-weight: bold; }
+.nobold { font-weight: normal; }
+.uppercase { text-transform: uppercase; }
+.font-normal { font-style: normal !important; }
+
+/*a { text-decoration: none; }
+a:hover { text-decoration: underline;}*/
+/*a:visited { color: rgb(41, 83, 118) !important;}*/
+a.underline-none { text-decoration: none; }
+a.underline-none:hover, a.underline-none span:hover { text-decoration: underline;}
+
+a.connects div.module-poster:hover, a.connects div.module-poster:focus { background-color: #DDD; }
+    a.connects div.module-poster:hover p { text-decoration: underline; }
+ 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h7 a { text-decoration: none; }
+
+hr { border-bottom: 0 !important; background: transparent; outline: none; border-top: 1px solid #999; }
+
+/* STYLES THAT SHOULD HAVE BEEN ADDRESSED IN THE WET TEMPLATE */
+span, em, sup, acronym { display: inline; }
+sup { line-height: 1em; }
+
+/* OVERWRITE PARAGRAPH STYLES FROM W.E.T. TEMPLATE */
+h1 { font-size: 170% !important; }
+h2 { line-height: 1.25em !important; }
+h6 { font-size: 85% !important; }
+
+.border-bottom-none { border-bottom: 0 !important; }
+.border-none { border: 0 !important; }
+.border-top-none { border-top: 0 !important; }
+
+/* W.E.T. CONTENT MODULES ('BINS') */
+.module { padding: 1em 0;  }
+
+/* RIGHT NAVIGATION - BLACK HEADERS FOR W.E.T. CONTENT MODULES ('BINS') */
+.background-black { background: #231F20 !important; color: #FFF !important; }
+.background-dark h1,
+.background-dark h2,
+.background-dark h3,
+.background-dark h4,
+.background-dark h5,
+.background-dark h6,
+.background-dark h7 { color: #FFF !important; }
+.background-light-grey { background: #f9f9f9 !important; color: #000 !important; }
+.background-rfabl-grey { background: #EEEEEE; color: #000 !important; }
+.foreground-black { color: #000 !important; }
+
+/* FOR THE TABBED INTERFACE ON THE FUNDING LANDING PAGE (FUNDING SEARCH TOOL) */
+ul.sshrc-tabs li { text-transform: uppercase; border-bottom: 0;}
+ul.sshrc-tabs li a { font-weight: bold !important; padding-right: .5em; padding-left: .5em; }
+ul.sshrc-tabs .active { background: #EEE !important; color: #000 !important; }
+ul.sshrc-tabs *:not(.active) { background: #949CA1 !important; color: #FFF !important; }
+
+.centered { margin-left: auto; margin-right: auto; }
+
+/* NONE OF THE <details> ELEMENTS ALLOWS YOU TO INCLUDE BULLET POINTS (THEY GO INVISIBLE), AND
+/* ELEMENTS LIKE <em>, <sup>, <span>, and <acronym> JUMP TO THE NEXT LINE IN IE8.
+/*********************************************************************************************/
+/*div#trans_content em, sup, span, acronym { display: inline; }
+div#trans_content ul li { list-style-type: circle; }
+div#trans_content ol li { list-style-type: decimal; }
+div#trans_content ul li, div.trans_content ol li { list-style-type: disc; }
+*/
+.list-style-circle { list-style: circle !important; }
+
+/***************************/
+/* 4. GENERAL STYLES - NEW */
+/***************************/
+
+/* HORIZONTAL RULE STYLES - DOTTED AND DASHED */
+hr.dotted, hr.dotted-grey, hr.dotted-green, hr.dotted-blue, hr.dotted-orange, hr.dotted-accent { border-left: 0; border-right: 0; border-top: 1px dotted !important; }
+hr.solid, hr.solid-grey, hr.solid-green, hr.solid-blue, hr.solid-orange, hr.solid-accent { border-left: 0; border-right: 0; border-top: 1px solid !important; }
+
+hr.dotted, hr.solid { border-top-color: #999 !important; }
+hr.dotted-grey, hr.solid-grey { border-top-color: #DDD !important; }
+hr.dotted-green, hr.solid-green { border-top-color: #D5D10E !important; }
+hr.dotted-blue, hr.solid-blue { border-top-color: #91B0D5 !important; }
+hr.dotted-accent, hr.solid-accent { border-top-color: rgb(20,94,145) !important; } /* WET TEMPLATE ACCENT BLUE */
+hr.dotted-orange, hr.solid-orange { border-top-color: #F15D22 !important; }
+hr.solid-black, hr.solid-black-thick, hr.dotted-black {  border-top-color: #231F20 !important; }
+hr.solid-black-thick { border-top-width: 2px !important; }
+
+hr.dotted-purple, hr.solid-purple { border-top-color: #A31984 !important; }
+
+hr.dashed { border-top: 1px dashed !important; border-top-color: #999; }
+
+.outline-none { outline: 0 !important; }
+
+/* FOR ANY ELEMENT TO HAVE A WIDTH OF 100% OF THE PARENT CONTAINER */
+.full-width { width: 100% !important; }
+.full-height { height: 100% !important; }
+
+.width-15 { width: 15% !important; }
+span.width-25 { width: 25% !important; }
+.width-25 { width: 25% !important; }
+.width-33 { width: 33.333% !important; }
+.width-66 { width: 66.666% !important; }
+.width-75 { width: 75% !important; }
+
+.height-none { height: 0 !important; }
+.height-xxsmall { height: .125em !important; }
+.height-xsmall { height: .25em !important; }
+.height-small { height: .5em !important; }
+.height-medium { height: 1em !important; }
+.height-large { height: 1.5em !important; }
+.height-xlarge { height: 2em !important; }
+
+/* A CONTINUATION OF THE STANDARD MARGIN STYLES PROVIDED BY THE WET TEMPLATE. MARGIN-LEFT WAS MISSING */
+.margin-left-none { margin-left: 0 !important; }
+.margin-left-small { margin-left: .5em !important; }
+.margin-left-xmedium { margin-left: .75em !important; }
+.margin-left-medium { margin-left: 1em !important; }
+.margin-left-large { margin-left: 1.5em !important; }
+.margin-left-xlarge { margin-left: 2em !important; }
+.margin-left-xxlarge { margin-left: 2.5em !important;}
+
+.margin-none { margin: 0; }
+.margin-small { margin: .5em !important; }
+
+/* SIMILAR STYLES AS THE MARGIN STYLES PROVIDED BY THE WET TEMPLATE */ 
+.padding-top-none { padding-top: 0 !important; }
+.padding-top-xsmall { padding-top: .25em !important; }
+.padding-top-small { padding-top: .5em !important; }
+.padding-top-medium { padding-top: 1em !important; }
+
+.padding-bottom-none { padding-bottom: 0 !important; }
+.padding-bottom-xsmall { padding-bottom: .25em !important; }
+.padding-bottom-small { padding-bottom: .5em !important; }
+.padding-bottom-medium { padding-bottom: 1em !important; }
+.padding-bottom-large { padding-bottom: 1.5em !important; }
+
+.padding-left-none { padding-left: 0 !important; }
+.padding-left-small { padding-left: .5em !important; }
+.padding-left-medium { padding-left: 1em !important; }
+.padding-left-large { padding-left: 1.5em !important; } 
+
+.padding-right-none { padding-right: 0 !important; }
+.padding-right-small { padding-right: .5em !important; }
+.padding-right-medium { padding-right: 1em !important; }
+.padding-right-large { padding-right: 1.5em !important; }
+
+.padding-none { padding: 0 !important; }
+.padding-small { padding: .5em; }
+.padding-medium { padding: 1em; }
+.padding-large { padding: 1.5em; }
+
+/* TOP BORDERS FOR ANY MODULES */
+.purple-border-top { border-top-color: #A31984 !important; }
+.blue-border-top { border-top-color: #91B0D5 !important; }
+.accent-border-top { border-top-color: rgb(20,94,145) !important; }
+.green-border-top { border-top-color: #D5D10E !important; }
+.orange-border-top { border-top-color: #F15D22 !important; }
+.magenta-border-top { border-top: .3em solid #EC008C !important; }
+.black-border-top { border-top: .3em solid #231F20 !important; }
+.ifca-blue-border-top { border-top: .3em solid #03B1EE !important; }
+
+.grey-border-top { border-top: 1px solid #DDD !important; }
+.grey-border-bottom { border-bottom: 1px solid #DDD !important; }
+
+.grey-border-top-thick { border-top: .5em solid #DDD !important; }
+.grey-border-bottom-thick { border-bottom: .5em solid #DDD !important; }
+
+.grey-border-left { border-left: 1px solid #DDD !important; }
+.grey-border-right { border-right: 1px solid #DDD !important;}
+
+.border-top-thick { border-top-width: 5px !important; border-top-style: solid !important; }
+
+.accent-border-left { border-left: .75em solid rgb(20,94,145) !important; }
+.accent-border-right { border-right: .75em solid rgb(20,94,145) !important; }
+
+.orange-border-left { border-left: .1em solid #F15D22 !important; }
+.orange-border-right { border-right: .1em solid #F15D22 !important; }
+
+.white-border-left { border-left: .05em solid #FFF!important; }
+.white-border-right { border-right: .05em solid #FFF !important; }
+
+.border-thick-grey { border: 4px solid #DDD; }
+.border-top-xthick { border-top-width: 8px !important; }
+.border-bottom-xthick { border-bottom-width: 8px !important; }
+
+.background-green { background-color: #D5D10E; }
+.background-blue { background-color: #91B0D5; }
+.background-purple { background-color: #A31984; }
+.background-yellow { background-color: #F3EA00; }
+.background-orange { background-color: #F15D22; }
+
+.background-ifca-blue { background-color: #03B1EE; }
+
+/*.background-white p, .background-white a { color: #000 !important; }*/
+
+.color-sshrc-blue { color: #91B0D5; }
+.color-sshrc-green { color: #D5D10E; }
+.color-purple { color: #A31984; }
+.color-white { color: #FFF; }
+.color-orange { color: #F15D22; }
+.color-ifca-blue { color: #03B1EE; }
+
+/* SMALL SECTION TITLES IN THE TOP LEFT CORNER OF THE MODULES/BINS */
+/*h6.mini-header { color: #999; text-transform: uppercase; padding-bottom: 0; margin-bottom: 0; }
+h6.mini-header a { color: #999; text-decoration: none; }
+h6.mini-header a:hover { color: #333; text-decoration: none; }
+*/
+
+/* W.E.T. TABBED INTERFACE (HOMEPAGE BANNER) */
+.hp-banner-panel {  }
+.tabs-panel { overflow: hidden; }
+
+#rfabl-overview ul.tabs { position: absolute; top: -2.5em; z-index: 1; height: 2.25em; background: none; }
+#rfabl-overview .tabs-panel ul a,
+#rfabl-overview .tabs-panel ul li a,
+#rfabl-overview .tabs-panel ul li p a { color: rgb(17, 79, 122) !important; } /* WET ACCENT BLUE */
+
+.rfabl_button:hover {
+    cursor:pointer;
+}
+
+/* REMOVE THE GRADIATED BACKGROUND IMAGE ON THE WET TEMPLATE TABS */
+.wet-boew-tabbedinterface .tabs li a { background-image: none; }
+.wet-boew-tabbedinterface .tabs li a:active { background-image: none; background-color: #FFF; }
+
+/* W.E.T. TABBED INTERFACE ("PRIORITIES" MODULE ON HOMEPAGE) */
+ul.right-nav-tabs { right: 0 !important; top: 0; width: 60px; overflow: hidden; }
+ul.right-nav-tabs .tabs-prev, ul.right-nav-tabs .tabs-next { border: 0 !important; outline: 0 !important; }
+ul.right-nav-tabs .tabs-stop, ul.right-nav-tabs .tabs-start { visibility: hidden; }
+
+/* W.E.T. TABBED INTERFACE - TAB/PREV/NEXT/PLAY/STOP BUTTONS (HOMEPAGE BANNER) */
+/*ul.banner-tabs { right: .5em !important; bottom: .5em !important; margin-top: 260px !important; }*/
+
+
+/* STYLES FOR THE SSHRC MOSAIC (USED IN THE STRAT. PLAN BUTTON) */
+div.sshrc-mosaic { display: block; font-size: 1px; margin: 0 auto; }
+div.sshrc-mosaic img { width: 100%; height: 5px; }
+div.sshrc-mosaic ul li { height: .25em; }
+
+/* STYLES FOR THE TITLE MOSAIC (ON EACH SUBPAGE AND LANDING PAGE) */
+div.title-mosaic { background: url(/_Images/backgrounds/top_banner_faded.jpg) repeat-x bottom left; }
+
+
+/* W.E.T. TABBED INTERFACE - PADDING FOR RIGHT-JUSTIFIED CONTENT PANEL (HOMEPAGE BANNER) */
+div.tabs-content-pad { padding: 1em 2em; }
+div.tabs-content-pad ul li { }
+div.tabs-content-pad h1 { border-bottom: 0; margin-top: 0 !important; }
+
+/* W.E.T. CONTENT MODULES ('BINS') - NEW MODULE TYPE (FOR HOMEPAGE) */
+.module-home { background: #FFF !important; outline: none !important; }
+.module-home a.button { margin-top: .5em !important; }
+.module-home p { padding-top: 0 !important; margin-top: 0 !important; }
+.module-home hr { outline: 0; border: 0; border-bottom: 1px solid #DDD }
+.module-home blockquote { display: block; background: transparent url(/_Images/common/big_quote.png) no-repeat 1em 0; border: 0 !important; padding: 0 1.5em !important; margin: 0 !important; }
+.module-home blockquote.quote-purple { background: transparent url(/_Images/common/big_quote_purple.png) no-repeat 1em 0; }
+.module-home .module-image-header, .module-home .module-footer { margin: 0 !important; }
+.module-home .module-image-header { padding: 0; }
+.module-home .module-footer { border-top: 1px solid #DDD; }
+.module-home .module-footer ul { }
+.module-home h6, .module-home h2 { border-bottom: 0 !important; }
+
+/* Controls the min-height of the modules on the homepage */
+.module-home .hp-top-row { min-height: 445px !important;}
+.module-home .hp-bottom-row { min-height: 350px !important;}
+.module-home .hp-bottom-row-fr { min-height: 400px !important;} 
+
+.module-related { overflow: hidden !important; line-height: .8em !important;  }
+.module-related div h2 { font-size: 1.25em !important; background: transparent !important; }
+.module-related div h2 a, .module-related div h2 a:visited  { color: #FFF !important; }
+.module-related a:hover { text-decoration: underline !important; }
+.module-related > img { margin-bottom: 0; }
+
+
+/* CSS BUTTONS - OTHER OPTIONS TO THE WET TEMPLATE'S DEFAULT BLUE BUTTON*/
+/*.purple-button, .button-purple,*/
+.button-green, .button-orange, .button-light-blue,
+.sshrc-button, .sshrc-button-orange,
+.button { /*font-family: Georgia, Times New Roman, Serif; font-style: italic; font-weight: bold;*/}
+/*.purple-button, .button-purple { Background: #A31984 !important; border: 1px solid #870B6B !important; }*/
+.button-green { background: #D5D10E !important; border: 1px solid #CCCC00 !important; }
+.button-orange { background: #F15D22 !important; border: 1px solid #E15D22 !important; }
+.button-light-blue { background: #91B0D5 !important; border: 1px solid #6288B5 !important; }
+
+ul.menu-horizontal li a.button  
+{
+    border-color: rgb(14, 65, 100) rgb(14, 65, 100) rgb(11, 50, 77);
+    color: white !important;
+    text-shadow: 0px 1px 1px rgb(34, 34, 34);
+    background-size: 100% auto;
+    background-image: linear-gradient(rgb(23, 108, 167), rgb(17, 79, 122));
+        
+ } /* WET ACCENT BLUE -- SAME STYLE AS a.button-accent IN UTIL-MIN.CSS */
+
+ul.menu-horizontal li a.button:hover,
+ul.menu-horizontal li a.button:focus 
+{
+    background-color: rgb(17, 79, 122);
+} /* WET ACCENT BLUE -- SAME STYLE AS a.button-accent:focus IN UTIL-MIN.CSS */
+
+.button-top { width: 27px !important; height: 27px !important; border: 0; }
+
+/* MULTI-COLUMN LISTS (assuming they are included within a DIV) */
+div ul { }
+div ul li { line-height: 1.5em; }
+
+ul.double-col li, ul.double-col-skewed-left li, div ul.triple-col li, div ul.quad-col li { float: left; }
+ul.double-col li { width: 50% !important; }
+ul.double-col-skewed-left li { list-style-type: none; }
+ul.double-col-skewed-left li.dcsl-leftCol { width: 3em; }
+ul.double-col-skewed-left li.dcsl-rightCol { width: 62%; }
+
+ul.triple-col li { display: inline; width: 33.333%; }
+ul.quad-col li { display: inline; width: 25%; }
+
+
+/* FOR ANY ELEMENT TO BE ABSOLUTE-LY POSITIONED */
+.position-absolute { position: absolute; }
+.position-relative { position: relative; }
+
+/* GREYED-OUT TEXT -- CAN APPLY TO ANY TEXT-BASED ELEMENT */
+.disabled { color: #999; line-height: 1em; font-size: 89%; }
+
+
+/* A LINE BREAK SIMULATING A DOUBLE SPACE */
+br.double-space { margin: .5em 0;}
+
+
+/* POSITIONING FOR THE DIALOGUE ICON ON THE HOMEPAGE RIGHT (SUPPLIMENTAL) NAVIGATION */
+.dialogue-icon { width: 40px !important; }
+
+/* DEFAULT THUMBNAIL IMAGE SIZING - 120PX */
+.thumbnail { width: 100px !important; }
+.thumbnail-medium { width: 150px !important; }
+.thumbnail-large { width: 200px !important; }
+.thumbnail-xlarge { width: 250px !important; }
+
+/* NEW BULLET STYLES (SSHRC-COLOURED TRIANGLES) */
+ul li.triangle-blue, ul li.bullet-blue { color: #000; list-style:none; list-style-position: outside; }
+ul li.triangle-blue:before, ul li.bullet-blue:before { color: #91B0D5; content:"\2022"; font-size:1.5em; padding-right:.5em; position:relative; top: .1em; }
+
+ul li.triangle-green, ul li.triangle-green-outside, ul li.bullet-green { color: #000; list-style:none; }
+ul li.triangle-green:before, ul li.triangle-green-outside:before, ul li.bullet-green:before { color: #D5D10E; content:"\2022"; font-size:1.5em; padding-right:.5em; position:relative; top: 0; }
+ul li.triangle-green-outside { list-style-position: outside;}
+
+li.position-outside { list-style-position: outside !important; }
+li.position-inside { list-style-position: inside !important; }
+
+/* OPTION TO HAVE NO BULLETS PRESENT ON A LIST ITEM */
+ul.no-bullets, ul.noBullet { list-style-type: none !important; }
+
+/* QUOTATIONS */
+span.quote-open-orange { display: inline-block; background-image: url(/_Images/common/quote_sm_open-orange.png); background-repeat: no-repeat; width: 22px; height: 22px; margin-right: 4px; vertical-align: text-top; }
+span.quote-close-orange { display: inline-block; background-image: url(/_Images/common/quote_sm_close-orange.png); background-repeat: no-repeat; width: 22px; height: 22px; margin-left: 4px; vertical-align: text-top; }
+span.quote-open-lt_grey { display: inline-block; background-image: url(/_Images/common/quote_sm_open-lt_grey.png); background-repeat: no-repeat; width: 22px; height: 22px; margin-right: 4px; vertical-align: text-top; }
+span.quote-close-lt_grey { display: inline-block; background-image: url(/_Images/common/quote_sm_close-lt_grey.png); background-repeat: no-repeat; width: 22px; height: 22px; margin-left: 4px; vertical-align: text-top; }
+span.quote-open-lt_fra_grey { display: inline-block; background-image: url(/_Images/common/quote_sm_open-lt_fra_grey.png); background-repeat: no-repeat; width: 22px; height: 22px; margin-right: 4px; vertical-align: middle; }
+span.quote-close-lt_fra_grey { display: inline-block; background-image: url(/_Images/common/quote_sm_close-lt_fra_grey.png); background-repeat: no-repeat; width: 22px; height: 22px; margin-left: 4px; vertical-align: text-bottom; }
+
+span.wb-icon-sshrc { display: inline-block; background-image: url(/_Images/SSHRC_brand.jpg); background-repeat: no-repeat; width: 14px; height: 14px; margin-right: 4px; vertical-align: text-top; }
+span.wb-icon-twitter-orange { display: inline-block; background-image: url(/_Images/landingPage/twitter_orange.png); background-repeat: no-repeat; width: 22px; height: 22px; margin-right: 4px; }
+span.wb-icon-twitter-accent { display: inline-block; background-image: url(/_Images/buttons/twitter_accent.png); background-repeat: no-repeat; width: 22px; height: 22px; margin-right: 2px; margin-left: 0; vertical-align: text-top; }
+span.wb-icon-ifca-play { display: inline-block; background-image: url(/_Images/landingPage/ifca/ifca_play.png); background-repeat: no-repeat; width: 26px; height: 26px; margin-right: 2px; margin-left: 0; vertical-align: top; }
+span.wb-icon-ifca-play-blue { display: inline-block; background-image: url(/_Images/landingPage/ifca/ifca_play_blue.png); background-repeat: no-repeat; width: 26px; height: 26px; margin-right: 2px; margin-left: 0; vertical-align: top; }
+span.wb-icon-storytellers-play-blue { display: inline-block; background-image: url(/_Images/landingPage/storytellers/storytellers_play_blue.png); background-repeat: no-repeat; width: 26px; height: 26px; margin-right: 2px; margin-left: 0; vertical-align: top; }
+
+.span-1-5 { width: 60%; }
+
+/* LEFT NAVIGATION STYLES */
+.background-grey-white { background: #F9F9F9;}
+
+/*h2.nav a:visited { color: rgb(41, 83, 118); }
+h3.top-section a.nav-current-nocss { padding-left: 0; }
+h3.top-section a.nav-current-nocss, ul.leftnav li a.nav-current, ul.leftnav2 li a.nav-current { font-weight: bold; }
+h3.top-section a.nav-current-nocss, ul.leftnav li, ul.leftnav li a.nav-current, ul.leftnav2 li, ul.leftnav2 li a.nav-current { background: transparent !important; border: 0 !important; outline: 0 !important; color: #000 !important;}
+ul.leftnav { margin-left: 0 !important; margin-right: .15em;  }
+ul.leftnav h2.nav { font-size: medium; margin-left: .25em;  margin-bottom: 0; margin-top: 0; padding-bottom: 0; padding-top: 0; line-height: 1em; }
+ul.leftnav li { padding-top: .5em; padding-bottom: .5em; border-top: 1px dotted #DDD !important; }
+ul.leftnav li ul { margin-bottom: 0; padding-bottom: 0; border-left: 2px solid #EEE; padding-left: 1em; margin-left: 0 !important;  }
+ul.leftnav li ul li { border-top: 0; }
+a.selectedLink { font-weight: bold !important;}
+*/
+
+/* ADDITIONAL TABLE STYLES */
+table.table-light th { background-color: #DDD; border-top: 1px solid #CCC;}
+
+
+/* SOCIAL MEDIA BUTTONS */
+.twitter_follow_button_f { background: url("/_Images/buttons/follow-f.jpg") no-repeat scroll left center transparent; }
+.twitter_follow_button_e { background: url("/_Images/buttons/follow.jpg") no-repeat scroll left center transparent; }
+.twitter_follow_button_e, .twitter_follow_button_f  
+{
+    margin: 0px;
+    padding: 2px 34px;
+    height: 20px;
+    width: 67px;
+    text-decoration: none;
+}
+
+/* CHARTS & FIGURES */
+.caption-none figcaption { visibility: hidden; }
+.caption-none .wb-charts { }
+.caption-none figure { padding-left: 0 !important; padding-right: 0 !important; margin-top: 0; }
+.caption-none figure .overlay { }
+.caption-none .legend table { width: 100%; }
+.legend-right .legend { float: right; }
+/**************/
+/* 5. EFFECTS */
+/**************/
+
+/* DROP SHADOW */
+.drop-shadow {
+	-moz-box-shadow: 1px 1px 2px #999;
+	-webkit-box-shadow: 1px 1px 2px #999;
+	box-shadow: 1px 1px 2px #999; /* CSS3 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999')"; /* IE 8 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999'); /* IE 5.5 - 7 */ 	
+}
+
+
+/* GRADIATED BACKGROUND */
+.bg-gradiant 
+{
+    background: #FFF; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#FFFFFF'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#FFF)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #EEE,  #FFF); /* for firefox 3.6+ */ 
+}
+
+
+/*******************/
+/* 6. VIDEO STYLES */
+/*******************/
+.video-container 
+{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;    
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.leftnav-hide
+{
+    display:none!important;
+    visibility:hidden !important;
+}
+
+.valigh-top{ 
+vertical-align: top; 
+}
+
+#transcript [class*="span-"] { margin-bottom: 0 !important; }
+
+/* THE WET TEMPLATE USES 'PRE' ELEMENTS FOR THE EXPAND/COLLAPSE FEATURE, BUT WHEN PRINTING, THE CONTENT OF THE PRE ELEMENT GETS CUT OFF */
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+/* ************************************************ */
+/* GOOGLE FONTS - NEW TYPOGRAPHY FOR THE SSHRC SITE */
+/* ************************************************ */
+
+/* DOSIS */
+
+h1.dosis, h2.dosis, h3.dosis, h4.dosis, h5.dosis, h6.dosis, h7.dosis, .dosis { font-family: 'Dosis', sans-serif !important; font-family: 'Arial', sans-serif !important\0/IE8; }
+.dosis-xxlarge, .dosis-xlarge, .dosis-larger, .dosis-large, .dosis-xmedium, .dosis-medium, .dosis-small, .dosis-xsmall { font-family: 'Dosis', sans-serif; }
+.dosis-xxlarge { font-size: 6em; line-height: 1em; }
+.dosis-xlarge { font-size: 5em; line-height: 1em;}
+.dosis-larger { font-size: 4em; line-height: 1em;}
+.dosis-large { font-size: 3em; line-height: 1em; }
+.dosis-mediumer { font-size: 2.5em; line-height: 1em; }
+.dosis-medium { font-size: 2em; line-height: 1em; }
+.dosis-xmedium { font-size: 1.75em; line-height: 1em; }
+.dosis-small { font-size: 1.5em; line-height: 1.25em; }
+.dosis-xsmall { font-size: 1em; line-height: 1em; }
+.dosis-xsmaller { font-size: .75em; line-height: 1em; }
+.dosis-xxsmall { font-size: .5em; line-height: 1em; }
+
+.dosis-weight-light { font-weight: 200;}
+.dosis-weight-medium { font-weight: 500;}
+
+.dosis-line-height-medium { line-height: 1.5em; }
+
+/* advent SLAB */
+
+.advent { font-family: 'Advent Pro', sans-serif !important; }
+.advent-xxlarge, .advent-xlarge, .advent-larger, .advent-large, .advent-xmedium, .advent-medium, .advent-small, .advent-xsmall { font-family: 'Advent Pro', sans-serif; font-family: 'Arial', sans-serif !important\0/IE8; }
+.advent-xxlarge { font-size: 6em; line-height: 1em; }
+.advent-xlarge { font-size: 5em; line-height: 1em;}
+.advent-larger { font-size: 4em; line-height: 1em;}
+.advent-large { font-size: 3em; line-height: 1em; }
+.advent-medium { font-size: 2em; line-height: 1em; }
+.advent-xmedium { font-size: 1.75em; line-height: 1em; }
+.advent-small { font-size: 1.5em; line-height: 1.25em; }
+.advent-xsmall { font-size: 1em; line-height: 1em; }
+
+.advent-weight-light { font-weight: 200;}
+.advent-weight-medium { font-weight: 500;}
+
+.advent-line-height-medium { line-height: 1.5em; }
+
+.line-height-none {
+    line-height: 0 !important;
+}
